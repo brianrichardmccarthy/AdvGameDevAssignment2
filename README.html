@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>Assignment 2</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <h1 id="assignment-2">Assignment 2</h1>
+<h2 id="database">Database</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>The player's score should be kept between levels using the Player Preferences, along with the current level. (done)</li>
+<li>The game should include a
+<ul>
+<li>splash screen</li>
+<li>end-of-game screen (done)</li>
+<li>login and sign-up screen. (done)</li>
+<li>high score sceen (done)</li>
+<li>create account (done)</li>
+</ul>
+</li>
+<li>When logging-in, the user should enter his/her nickname and password; (done)
+<ul>
+<li>if the user is not already registered, s/he should be offered to sign-up. (done)</li>
+</ul>
+</li>
+<li>At the end of each game the player's score should be saved on a database and s/he should have access to a high-score screen. (done)</li>
+<li>The database should consist of a MYSQL database hosted online. (done)</li>
+<li>The score should be updated and displayed at all times during gameplay. (done)</li>
+<li>The player should be able to quit the game at all times; in this case, its current score should be saved, along with the current level. (done)</li>
+<li>If the player decides to re-play the game, s/he should be offered to resume the game from the level where they exited the last time (i.e., restart from the beginning of the level and load the scene accordingly). (done)</li>
+</ul>
+<h3 id="marking">Marking</h3>
+<ul>
+<li>&lt;40% (fail): None of the general features are implemented.</li>
+<li>40-50%: Player's score can be saved and updated using PlayerPrefs, and a connection to a MYSQL database.</li>
+<li>51-70%: The player can either log-in or sign-up.</li>
+<li>71-80%: The current level should be saved when the player quits the game.</li>
+<li>80%+: The player should be able to resume a previous game if they wish to do so.</li>
+</ul>
+<h2 id="level-1">Level 1</h2>
+<h3 id="features-1">Features</h3>
+<ul>
+<li>The player needs to navigate the level and collect four items located in random locations. (done)</li>
+<li>A 3D maze that is generated randomly using the binary tree algorithm. (done)</li>
+<li>All walls should be textured. (done)</li>
+<li>A First- or Third-person Controller for the player. (done)</li>
+<li>4 NPCs who will be chasing the player using Navmesh navigation. (done)</li>
+<li>Once the player has collected all the relevant objects, it should be move to the second level. (done)</li>
+<li>The score is based on the number of items collected. (done)</li>
+<li>The level is restarted is the player is caught by the NPCs. (done)</li>
+<li>The player should be able to eliminate them using a basic gun simulation (e.g., Raycasting). (done)</li>
+</ul>
+<h3 id="marking-1">Marking</h3>
+<ul>
+<li>&lt;40% (fail): No procedural generation was provided.</li>
+<li>40-50%: The level was created procedurally.</li>
+<li>51-70%: The player can navigate through the level and collect objects, and the score is updated accordingly.</li>
+<li>71-80%: NPCs are included; they can chase the player and can be eliminated by the player.</li>
+<li>80%+: The player can progress to the next level after collecting the items, or restart the level after being caught.</li>
+</ul>
+<h2 id="level-2">Level 2</h2>
+<h3 id="features-2">Features</h3>
+<ul>
+<li>The player needs to navigate the level and collect four items located at random locations. (done)</li>
+<li>The environment can be generated using either 3D meshes or 3D blocks. (done)</li>
+<li>A First- or Third-person Controller for the player. (done)</li>
+<li>Once the player has collected all the relevant objects, it should be moved to the third level. (done)</li>
+<li>The level was created procedurally using meshes. (done)</li>
+</ul>
+<h3 id="marking-2">Marking</h3>
+<ul>
+<li>&lt;40% (fail): No procedural generation was provided.</li>
+<li>40-50%: The level was created procedurally using blocks.</li>
+<li>51-70%: The player can navigate through the level and collect objects, and the score is updated accordingly.</li>
+<li>71-80%: The player can progress to the next level after collecting the items.</li>
+<li>80%+: The level was created procedurally using meshes.</li>
+</ul>
+<h2 id="level-3">Level 3</h2>
+<h3 id="features-3">Features</h3>
+<ul>
+<li>A 3D solar system generated using an XML file. (done)</li>
+<li>The player needs to navigate the level and collect four items located at random locations in space. (done)</li>
+<li>Each of these items should be a satellite of one of the planets; in other words, it will need to rotate around one of the planets at a speed of your choice. (done)</li>
+<li>The XML file should include the name of the planets, along with their size, color, distance to the sun, and rotational velocity, all relative to the sun. (done)</li>
+<li>Each planet should rotate according to the data included in the XML file and include a label with their name. (done)</li>
+<li>A trail should be generated for each planet. (done)</li>
+<li>A spaceship based on Unity's Vehicles prefabs (e.g., Aicraft-Jet). (done)</li>
+<li>Once the player has collected all the relevant objects, it should be move to the fourth level. (done)</li>
+</ul>
+<h3 id="marking-3">Marking</h3>
+<ul>
+<li>&lt;40% (fail): No procedural generation was provided based on an XML file.</li>
+<li>40-50%: The level was created procedurally using an XML file and the planets are represented accordingly.</li>
+<li>51-70%: The player can navigate through the level and collect objects, and the score is updated accordingly.</li>
+<li>71-80%: The player can progress to the next level after collecting the items.</li>
+<li>80%+: Objects to be collected are created as satellites of some of the planets.</li>
+</ul>
+<h2 id="level-4">Level 4</h2>
+<h3 id="features-4">Features</h3>
+<ul>
+<li>The level consists of a multi-player tank simulation. (done)</li>
+<li>The level includes a 3D environment with walls in places. (done)</li>
+<li>Each player is represented by a tank. (done)</li>
+<li>Collisions should be detected between the tank and the walls. (done)</li>
+<li>Each tank can be made of basic shapes (e.g., cylinders, and cubes) (done)</li>
+<li>Each tank can rotate and move forward and back. (done)</li>
+<li>Each tank can fire missiles. (done)</li>
+<li>Each player will be instantiated using a Round-Robin method. (done)</li>
+<li>Each tank is destroyed after being hit 10 times.</li>
+<li>Once a tank has been destroyed it will be re-instantiated at a location determined by a Round-Robin method.</li>
+<li>Each player should include a camera that follows its movement (i.e., top-view). (done)</li>
+<li>Each player should avail of a mini-map. (done)</li>
+<li>Once the player has collected all the relevant objects, the game ends and the player has won.</li>
+</ul>
+<h3 id="marking-4">Marking</h3>
+<ul>
+<li>&lt;40% (fail): the level can't be played by 2+ players simultaneously.</li>
+<li>40-50%: The level can be played by 2+ players simultaneously and each player is represented by a 3D object that can be moved accordingly.</li>
+<li>51-70%: Each tank is instantiated using a Round-Robin method and can fire missiles and collide with walls.</li>
+<li>71-80%: Each player avails of a mini-map, a camera that follows its movement using a top-down view.</li>
+<li>80%+: Missiles produce an explosion upon collision.</li>
+</ul>
+<h2 id="delivery">Delivery:</h2>
+<ul>
+<li>Document that describes the features that you have implemented.</li>
+<li>Mention any issues/bugs encountered.</li>
+<li>Full project zipped.</li>
+<li>A screen-cast (link to be provided).</li>
+<li>A webGl version.</li>
+</ul>
+
+    </body>
+    </html>

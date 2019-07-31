@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/splashScreen.unity
+    guid: a6dba2d2e79ec714ba21f530ce30bdc3
+  - enabled: 1
+    path: Assets/Scenes/main_menu.unity
+    guid: a3a1d7078ae89384b852082313406730
+  - enabled: 1
+    path: Assets/Scenes/Level_1_Binary_Tree.unity
+    guid: e7c641ab078d13840b75dca21c96af61
+  - enabled: 1
+    path: Assets/Scenes/Level_2_Perlin_Noise.unity
+    guid: 1617e5e9f6e8a914196c19fc5a711eb4
+  - enabled: 1
+    path: Assets/Scenes/Level_3_XML.unity
+    guid: 639d8f42c5300754cbf4d8b411683c28
+  - enabled: 1
+    path: Assets/Scenes/Level_4_Network.unity
+    guid: 1e8b5d60a3a811f4d88badbf98ebbc4d
+  - enabled: 1
+    path: Assets/Scenes/high_scores.unity
+    guid: 63ef85807099e204cbb2c9d9cda66c35
+  - enabled: 1
+    path: Assets/Scenes/game_over.unity
+    guid: 43f3de261ef2fbd47a756becac0b794d
+  m_configObjects: {}
